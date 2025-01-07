@@ -12,28 +12,20 @@
       <nav>
         <img src="./images/5958.jpg" alt="logo rabbit" />
 
-        <input type="text" placeholder="Search" />
-
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#">Accueil</a>
           </li>
+          <li><a href="#species">Especes</a></li>
 
-          <!-- dropdown: -->
-          <li>
-            <a href="#species">Species</a>
-            <div>
-              <a href="#Blanc de Hotot">Blanc de Hotot</a>
-              <a href="#Lapin belier">Lapin belier</a>
-              <a href="#Lapin Tan">Lapin Tan</a>
-            </div>
-            <!-- <li><a href="">Species</a></li> -->
-          </li>
-
-          <li><a href="#about">About</a></li>
+          <li><a href="#about">A propos</a></li>
           <li><a href="#contact">Contact </a></li>
         </ul>
       </nav>
+      <div class="search">
+        <input type="text" placeholder="Trouvez l'espece" />
+        <button>Envoyer</button>
+      </div>
     </header>
 
     <main>
@@ -43,56 +35,65 @@
         </div>
 
         <div class="aboutRabbit">
-          <h1>About Rabbit</h1>
+          <h1>Rabbit</h1>
           <p>
-            The rabbit is a small mammal that belongs to the family Leporidae,
-            which also includes hares. There are about 30 species of rabbits
-            around the world. Rabbits are herbivores, which means they only eat
-            plants. They are known for their long ears, short tails, and
-            powerful hind legs. Rabbits are social animals that live in groups
-            called colonies. They are also known for their ability to reproduce
-            quickly. Rabbits are found in a variety of habitats, including
-            forests, grasslands, deserts, and wetlands. They are also popular
-            pets and are often kept in homes and gardens. Rabbits are known for
+            Le lapin est un petit mammifère appartenant à la famille des
+            Léporidés, qui comprend également les lièvres. Il existe environ 30
+            espèces de lapins dans le monde. Les lapins sont herbivores, ce qui
+            signifie qu'ils ne mangent que des plantes. Ils sont connus pour
+            leurs longues oreilles, leur queue courte et leurs pattes
+            postérieures puissantes. Les lapins sont des animaux sociaux qui
+            vivent en groupes appelés colonies. Ils sont également connus pour
+            leur capacité à se reproduire rapidement. Les lapins se trouvent
+            dans divers habitats, notamment les forêts, les prairies, les
+            déserts et les zones humides. Ce sont également des animaux de
+            compagnie populaires et sont souvent gardés dans les maisons et les
+            jardins. Les lapins sont connus pour
           </p>
 
           <div class="btn">
-            <button>Read More</button>
+            <button>
+              <a href="https://fr.wikipedia.org/wiki/Lapin" target="_blank"
+                >En savoir plus</a
+              >
+            </button>
           </div>
         </div>
       </section>
 
       <section class="species" id="species">
-        <div class="speciesContainer" id="Blanc de Hoto">
-          <img src="./images/5958.jpg" alt="species image" />
+        <div>
+          <img src="./images/blanc de hotot.jpg" alt="species image" />
           <h2>Blanc de Hotot</h2>
           <button>
             <a
               href="https://www.planeteanimal.com/races-de-lapins-et-leurs-caracteristiques-236.html#anchor_0"
               target="_blank"
-              >About Me</a
+              >A propos</a
             >
           </button>
         </div>
-        <div class="speciesContainer" id="Lapin belier">
-          <img src="./images/5958.jpg" alt="species image" />
+        <div>
+          <img src="./images/Lapin bélier.jpg" alt="species image" />
 
           <h2>Lapin belier</h2>
           <button>
             <a
               href="https://www.planeteanimal.com/races-de-lapins-et-leurs-caracteristiques-236.html#anchor_3"
-              >About Me</a
+              target="_blank"
+              >A propos</a
             >
           </button>
         </div>
-        <div class="speciesContainer" id="Lapin Tan">
-          <img src="./images/5958.jpg" alt="species image" />
+        <div>
+          <img src="./images/Lapin Tan.jpg" alt="species image" />
 
           <h2>Lapin Tan</h2>
           <button>
             <a
               href="https://www.planeteanimal.com/races-de-lapins-et-leurs-caracteristiques-236.html#anchor_7"
-              >About Me</a
+              target="_blank"
+              >A propos</a
             >
           </button>
         </div>
@@ -102,9 +103,9 @@
     <footer>
       <p>&copy; 2025 Rabbit</p>
 
-      <div class="contact">
-        <label for="contact"> Contact</label>
-        <input type="text" placeholder="Enter your email" id="contact" />
+      <div>
+        <label for="contact">Contact</label>
+        <input type="email" name="email" id="contact" />
       </div>
     </footer>
   </body>
